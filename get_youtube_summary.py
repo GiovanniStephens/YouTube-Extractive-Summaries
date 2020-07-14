@@ -44,7 +44,9 @@ if __name__ == '__main__':
         try:
             user_input = input('Please, type a positive number to determine how many words to have in the summary.')
             n = int(user_input)
-            main(abs(n))
+            url = sys.argv[1]
+            url = str(url)
+            main(url, abs(n))
         except ValueError:
             print(f'{user_input} is not a valid variable. Please, insert a positive integer for the number words you want.')
             sys.exit(1)
