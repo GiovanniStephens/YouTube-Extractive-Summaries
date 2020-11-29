@@ -1,26 +1,22 @@
-# README #
+# Extractive YouTube Summaries
 
-### What is this repository for? ###
+This is a quick script I put together to extract and summarise the subtitle transcripts from [YouTube](https://www.youtube.com/) videos. 
+I use [extractive summarization](https://en.wikipedia.org/wiki/Automatic_summarization#Extraction-based_summarization) from [Gensim Summarizer](https://radimrehurek.com/gensim_3.8.3/summarization/summariser.html) to extract the most relevant sentences, [deepsegment](https://pypi.org/project/deepsegment/) to segment sentences with poor punctuation, and [youtube_transcript_api](https://pypi.org/project/youtube-transcript-api/) to get the transcripts.
 
-* This is a quick hack together to be able to pull YouTube captions and summarise them using textRank extractive summaries
-* 1.0
+# Installation
 
-### How do I get set up? ###
+First, clone the repository. 
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+In your terminal, run:  
+```
+pip install -r requirements.txt
+```
 
-### Contribution guidelines ###
+# Usage
 
-* Writing tests
-* Code review
-* Other guidelines
+```python
+>>> python get_youtube_summary [video link] 200
+```
 
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+# Resources/References
+1. [Federico Barrios, Federico L´opez, Luis Argerich, Rosita Wachenchauzer (2016). Variations of the Similarity Function of TextRank for Automated Summarization,](https://arxiv.org/abs/1602.03606)
