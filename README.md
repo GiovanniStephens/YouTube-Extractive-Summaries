@@ -15,7 +15,7 @@ pip install -r requirements.txt
 # Usage
 
 ```python
->>> python get_youtube_summary [video link] 200
+python get_youtube_summary [video link] 200
 ```
 
 # Resources/References
